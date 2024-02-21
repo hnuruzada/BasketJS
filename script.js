@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded",function(params) {
-    
+    document.getElementById("go-to-checkout").addEventListener("click",()=>{
+        window.location.href="./checkout.html"
+    })
     const addToCartButton=document.querySelectorAll(".add-to-cart")
 
     const deleteAll=document.getElementById("delete-all")
@@ -105,3 +107,4 @@ document.addEventListener("DOMContentLoaded",function(params) {
     UpdateCartCount()
     DisplayCart()
 })
+
